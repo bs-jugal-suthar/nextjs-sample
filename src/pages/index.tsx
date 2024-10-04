@@ -16,7 +16,7 @@ const geistMono = localFont({
 export default function Home() {
 
   useEffect(()=>{
-   fetch("/api/user").then((response)=>{
+   fetch("/api/user/v1/").then((response)=>{
     response.json()
     .then((data)=>console.log("data is ",data))
    })
