@@ -2,6 +2,7 @@ import React from 'react';
 
 const ServerCounter = async () => {
   const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+  console.log("fetched...")
   const data = await response.json();
 
   const count = 0;
